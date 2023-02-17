@@ -15,20 +15,20 @@ class PVE extends Battle {
     this._monsters = _monsters;
   }
 
-  private attackMonsters(monsters: FighterOrMonsterOrCharacter): void {
-    this.player.attack(monsters);
-    if (monsters.lifePoints > 0) monsters.attack(this.player);
+  private attackMonster(monster: FighterOrMonsterOrCharacter): void {
+    this.player.attack(monster);
+    if (monster.lifePoints > 0) monster.attack(this.player);
   }
 
   private filterAliveMonsters(): FighterOrMonsterOrCharacter[] {
-    return this._monsters.filter((enemy) => enemy.lifePoints > 0);
+    return this._monsters.filter((monster) => monster.lifePoints > 0);
   }
 
   public fight(): number {
     if (this.player.lifePoints > 0 && this._monsters.length) {
       this._monsters = this.filterAliveMonsters();
       if (this._monsters.length) {
-        this._monsters.forEach((enemy) => this.attackMonsters(enemy));
+        this._monsters.forEach((enemy) => this.attackMonster(enemy));
       }
     }
     return super.fight();
