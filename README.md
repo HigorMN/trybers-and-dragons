@@ -6,9 +6,9 @@ Este projeto consiste na aplicação dos princípios da arquitetura SOLID e da P
 
 <h1>Stack utilizada</h1>
 
-<p>Back-end: Javascript, Typescript, Node.js, POO, SOLID, Docker</p>
+Back-end: `Javascript`, `Typescript`, `Node.js`, `POO`, `SOLID`, `Docker`
 
-<h1>Rodando o Docker</h1>
+<h1>🐋 Rodando no Docker</h1>
 
 Para executar o serviço Node, utilize o comando `docker-compose up -d`
 
@@ -24,7 +24,7 @@ Ele te dará acesso ao terminal interativo do container criado pelo compose, que
 
 ⚠️ **Atenção** ⚠️ Caso você esteja usando macOS e ao executar o docker-compose up -d se depare com o seguinte erro:
 
-```
+```typescript
 The Compose file './docker-compose.yml' is invalid because:
 Unsupported config option for services.db: 'platform'
 Unsupported config option for services.node: 'platform'
@@ -40,13 +40,13 @@ Unsupported config option for services.node: 'platform'
 
 <h1 align="center">Criando Batalhas 🧙‍♀️ ⚔️ 👾👹👻</h1>
 
-# Batalha PVP (Player vs Player)
+<h2>Batalha PVP (Player vs Player)</h2>
 
 Para criar uma Batalha PVP, voce precisa criar duas instancias de players.
 
 ✨ Dica: Voce pode upar o level dos personagens com o metodo `levelUp`.
 
-```
+```typescript
 const player1 = new Character('Harold');
 const player2 = new Character('Any');
 player1.levelUp();
@@ -54,23 +54,23 @@ player1.levelUp();
 
 Criando a instancia de PVP, voce precisa instanciar a batalha PVP da seguinte forma:
 
-```
+```typescript
 const pvp = new PVP(player1, player2);
 ```
 
-# Batalha PVE (Player vs "Ambiente")
+<h2>Batalha PVE (Player vs "Ambiente")</h2>
 
 Para criar uma Batalha PVE, voce precisa ter um player e um `array` de monsters( no array pode ser inserido a quantidade que desejar de `monstros` e `dragons`).
 
 ✨ Dica: Voce pode upar o level dos personagens com o metodo `levelUp`.
 
-```
+```typescript
 const player1 = new Character('Harold');
 const monster = new Monster();
 ```
 
 Criando a instancia de PVE, voce precisa instanciar a batalha PVE da seguinte forma:
 
-```
+```typescript
 const pve = new PVE(player1, [monster]);
 ```
