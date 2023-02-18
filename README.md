@@ -3,12 +3,10 @@
 <p>
 Este projeto consiste na aplicação dos princípios da arquitetura SOLID e da Programação Orientada a Objetos (POO) em uma estrutura de jogos de interpretação de papéis, popularmente conhecidos como RPGs (Role Playing Games). Através dessa aplicação, foram criadas bases sólidas para o desenvolvimento de jogos de RPG, permitindo maior flexibilidade, escalabilidade e manutenibilidade do código, além de garantir uma melhor organização das funcionalidades do jogo e facilitar a adição de novos recursos.
 </p>
-<br />
 
 <h1>Stack utilizada</h1>
 
 <p>Back-end: Javascript, Typescript, Node.js, POO, SOLID, Docker</p>
-<br />
 
 <h1>Rodando o Docker</h1>
 
@@ -39,7 +37,6 @@ Unsupported config option for services.node: 'platform'
 
 - Você pode adicionar manualmente nos arquivos .bashrc, .zshenv ou .zshrc do seu computador a linha export DOCKER_DEFAULT_PLATFORM=linux/amd64, essa é uma solução global. As soluções foram com base nesta fonte.
 </details>
-<br />
 
 <h1 align="center">Criando Batalhas 🧙‍♀️ ⚔️ 👾👹👻</h1>
 
